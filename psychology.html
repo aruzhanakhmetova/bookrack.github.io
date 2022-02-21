@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<hr>
+
+<h2>Psychology</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1328662055/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1328662055&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/p1.jpg" alt="Psychology" style="width:100%"></a>
+      <h3>Maybe You Should Talk to Someone: A Therapist, Her Therapist, and Our Lives Revealed</h3>
+      <p>Maybe You Should Talk to Someone is revolutionary in its candor, offering a deeply personal yet universal tour of our hearts and minds and providing the rarest of gifts: a boldly revealing portrait of what it means to be human, and a disarmingly funny and illuminating account of our own mysterious lives and our power to transform them.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/Mindset-Psychology-Carol-S-Dweck/dp/0345472322/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Mindset&qid=1645410642&s=books&sr=1-1"><img src="assets/images/p2.jpg" alt="Psychology" style="width:100%"></a>
+      <h3>Mindset: The New Psychology of Success</h3>
+      <p>In this edition, Dweck offers new insights into her now famous and broadly embraced concept. She introduces a phenomenon she calls false growth mindset and guides people toward adopting a deeper, truer growth mindset. She also expands the mindset concept beyond the individual, applying it to the cultures of groups and organizations. With the right mindset, you can motivate those you lead, teach, and love — to transform their lives and your own.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/B0006IU7JK/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=How+to+Win+Friends+and+Influence+People&qid=1645410739&s=books&sr=1-1"><img src="assets/images/p3.jpg" alt="Psychology" style="width:100%"></a>
+      <h3>How to Win Friends and Influence People</h3>
+      <p>Since its release in 1936, How to Win Friends and Influence People has sold more than 15 million copies. Dale Carnegie's first book is a timeless bestseller, packed with rock-solid advice that has carried thousands of now famous people up the ladder of success in their business and personal lives.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1400069289/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1400069289&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/p4.jpg" alt="Psychology" style="width:100%"></a>
+      <h3>The Power of Habit: Why We Do What We Do in Life and Business</h3>
+      <p>Marketers at Procter & Gamble study videos of people making their beds. They are desperately trying to figure out how to sell a new product called Febreze, on track to be one of the biggest flops in company history. Suddenly, one of them detects a nearly imperceptible pattern—and with a slight shift in advertising, Febreze goes on to earn a billion dollars a year.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+    </div>
+
+</body>
+</html>

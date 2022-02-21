@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: 'Montserrat', sans-serif;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Library</h2>
+<p>Click to choose genre:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openGenre(event, 'Fantasy')">Fantasy</button>
+  <button class="tablinks" onclick="openGenre(event, 'Romance')">Romance</button>
+  <button class="tablinks" onclick="openGenre(event, 'Detective')">Detective</button>
+  <button class="tablinks" onclick="openGenre(event, 'Thriller')">Thriller</button>
+  <button class="tablinks" onclick="openGenre(event, 'Science')">Science</button>
+  <button class="tablinks" onclick="openGenre(event, 'Fiction')">Fiction</button>
+  <button class="tablinks" onclick="openGenre(event, 'Health')">Health</button>
+  <button class="tablinks" onclick="openGenre(event, 'Psychology')">Psychology</button>
+  <button class="tablinks" onclick="openGenre(event, 'Business')">Business</button>
+  <button class="tablinks" onclick="openGenre(event, 'Non-fiction')">Non-fiction</button>
+</div>
+
+<div id="Fantasy" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/Harry-Potter-Sorcerers-Stone-Book/dp/B017V4IMVQ/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Harry+Potter+and+the+Sorcerer%27s+Stone&qid=1645408855&s=books&sr=1-1"><img src="assets/images/hp1.jpg" alt="Harry Potter" style="width:100%"></a>
+      <h3>Harry Potter and the Sorcerer's Stone</h3>
+      <p>Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/0553588486/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0553588486&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/got.jpg" alt="Game of thrones" style="width:100%"></a>
+      <h3>A Game of Thrones</h3>
+      <p>Summers span decades. Winter can last a lifetime. And the struggle for the Iron Throne has begun. As Warden of the north, Lord Eddard Stark counts it a curse when King Robert bestows on him the office of the Hand. His honour weighs him down at court where a true man does what he will, not what he must … and a dead enemy is a thing of beauty. The old gods have no power in the south, Stark’s family is split and there is treachery at court. Worse, the vengeance-mad heir of the deposed Dragon King has grown to maturity in exile in the Free Cities. He claims the Iron Throne..</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/gp/product/0439023483/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0439023483&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/hg.jpg" alt="Hunger Games" style="width:100%"></a>
+      <h3>The Hunger Games</h3>
+      <p>In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/0316015849/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0316015849&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/twilight.jpg" alt="Twilight" style="width:100%"></a>
+      <h3>Twilight</h3>
+      <p>About three things I was absolutely positive. First, Edward was a vampire. Second, there was a part of him—and I didn't know how dominant that part might be—that thirsted for my blood. And third, I was unconditionally and irrevocably in love with him. Deeply seductive and extraordinarily suspenseful, Twilight is a love story with bite. </p>
+    </div>
+  </div>
+</div>
+
+<div id="Romance" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+      <a href="https://www.amazon.com/gp/product/1250783348/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1250783348&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/r1.jpg" alt="Romance" style="width:100%"></a>
+      <h3>When You Get the Chance</h3>
+      <p>There’s Steph, a still-aspiring stage actress and receptionist at a talent agency. There’s Farrah, ethereal dance teacher who clearly doesn’t have the two left feet Millie has. And Beth, the chipper and sweet stage enthusiast with an equally exuberant fifteen-year-old daughter (A possible sister?! This is getting out of hand). But how can you find a new part of your life and expect it to fit into your old one, without leaving any marks? And why is it that when you go looking for the past, it somehow keeps bringing you back to what you’ve had all along?</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1609074602/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1609074602&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/r3.jpg" alt="Romance" style="width:100%"></a>
+      <h3>Blackmoore</h3>
+      <p>Kate journeys to the stately manor of Blackmoore determined to fulfill her end of the bargain and enlists the help of her dearest childhood friend, Henry Delafield. But when it comes to matters of love, bargains are meaningless and plans are changeable. There on the wild lands of Blackmoore, Kate must face the truth that has kept her heart captive. Will the proposal she is determined to reject actually be the one thing that will set her heart free?</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/B08VHW6Z5L/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B08VHW6Z5L&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/r2.jpg" alt="Romance" style="width:100%"></a>
+      <h3>The Temporary Roomie</h3>
+      <p>What happens when you have to play nice with your greatest enemy? Revenge. Drew Marshall may have let me move into his spare bedroom while my house is being renovated, but don’t think for one second his kindness comes without strings. Big, ugly, fake relationship strings. That’s okay, though, Dr. Andrew. I’ll agree to your terms, move into your house, and act like your girlfriend when the big day comes; but I also plan to make your life miserable—make you pay for what you did to me.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1250624169/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1250624169&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/r4.jpg" alt="Romance" style="width:100%"></a>
+      <h3>Ten Rules for Faking It</h3>
+      <p>What happens when your love life becomes the talk of the town? As birthdays go, this year’s for radio producer Everly Dean hit rock-bottom. Worse than the “tonsillectomy birthday.” Worse than the birthday her parents decided to split (the first time). But catching your boyfriend cheating on you with his assistant?</p>
+    </div>
+  </div>
+</div>
+
+<div id="Detective" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+     <a href="https://www.amazon.com/gp/product/0778311724/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0778311724&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/d1.jpg" alt="Detective" style="width:100%"></a>
+      <h3>Her Last Goodbye</h3>
+      <p>Family ties run deep. Family secrets run deeper. Perfect wife. Doting mom. Jennifer Griffin was loved by everyone, including the women in her suburban-neighborhood book club. Their meetings sometimes went late, but Jenn always came home. Until that night.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/gp/product/1950054403/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1950054403&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/d2.jpg" alt="Detective" style="width:100%"></a>
+      <h3>Murder at the Mansions: A 1920s Historical Mystery</h3>
+      <p>If you like sophisticated whodunits, charming characters, and novels with a lighthearted tone, you'll enjoy the seventh installment of the High Society Lady Detective series, Murder at the Mansions, from USA Today bestselling author, Sara Rosett.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+  <a href="https://www.amazon.com/gp/product/1250782619/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1250782619&SubscriptionId=1MGPYB6YW3HWK55XCGG2">  <img src="assets/images/d3.jpg" alt="Detective" style="width:100%"></a>
+      <h3>Hot and Sour Suspects</h3>
+      <p>When Lana Lee’s best friend, Megan Riley, asks her to help host a speed dating contest at Ho-Lee Noodle House, she doesn’t see the harm in lending a hand. The night goes better than anticipated, and both Lana and Megan are beyond thrilled with the results. But before they can break out the champagne, Rina Su, fellow Asia Village shop owner and speed dating participant, calls to inform Lana that the date she’s just matched with has been murdered. Under suspicion of foul play, Rina enlists Lana’s help in finding out what really happened that night.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/gp/product/1788165322/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1788165322&SubscriptionId=1MGPYB6YW3HWK55XCGG2"> <img src="assets/images/d4.jpg" alt="Detective" style="width:100%"></a>
+      <h3>The Twyford Code</h3>
+      <p>Forty years ago, Steven Smith found a copy of a famous children's book, its margins full of strange markings and annotations. He took it to his remedial English teacher, Miss Isles, who became convinced it was the key to solving a puzzle. That a message in secret code ran through all Edith Twyford's novels. Then Miss Isles disappeared on a class field trip, and Steven's memory won't allow him to remember what happened. Now, out of prison after a long stretch, Steven decides to investigate the mystery that has haunted him for decades. Was Miss Isles murdered? Was she deluded? Or was she right about the code? And is it still in use today? Desperate to recover his memories and find out what really happened to Miss Isles, Steven revisits the people and places of his childhood.</p>
+    </div>
+  </div>
+</div>
+    <div id="Thriller" class="tabcontent">
+  <div class="main">
+
+<hr>
+
+<h2>Thriller</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+     <a href="https://www.amazon.com/gp/product/0593185412/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0593185412&SubscriptionId=1MGPYB6YW3HWK55XCGG2"> <img src="assets/images/t1.jpg" alt="Thriller" style="width:100%"></a>
+      <h3>One Step Too Far</h3>
+      <p>Frankie Elkin, who readers first met in Before She Disappeared, learns of a young man who has gone missing in a national forest. Law enforcement has abandoned the search, but a crew of people led by the young man's father are still looking. Sensing a father's desperation, Frankie agrees to help--but soon sees that a missing person isn't all that's wrong here. And when more people start to vanish, Frankie realizes she's up against something very dark--and she's running out of time.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/0374212236/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0374212236&SubscriptionId=1MGPYB6YW3HWK55XCGG2"> <img src="assets/images/t2.jpg" alt="Thriller" style="width:100%"></a>
+      <h3>Devil House</h3>
+      <p>Gage Chandler is descended from kings. That's what his mother always told him. Now, he is a true crime writer, with one grisly success--and movie adaptation--to his name, along with a series of subsequent lesser efforts that have paid the bills but not much more. But now he is being offered the chance for the big break: To move into the house--what the locals call "The Devil House"--in which a briefly notorious pair of murders occurred, apparently the work of disaffected 1980s teens. He begins his research with diligence and enthusiasm, but soon the story leads him into a puzzle he never expected--back into his own work and what it means, back to the very core of what he does and who he is. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1984818260/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1984818260&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/t3.jpg" alt="Thriller" style="width:100%"></a>
+      <h3>The Accomplice</h3>
+      <p>Owen Mann is charming, privileged, and chronically dissatisfied. Luna Grey is secretive, cautious, and pragmatic. Despite their differences, they begin forming a bond the moment they meet in college. Their names soon become indivisible--Owen and Luna, Luna and Owen--and stay that way even after an unexplained death rocks their social circle.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1250301696/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1250301696&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/t4.jpg" alt="Thriller" style="width:100%"></a>
+      <h3>The Silent Patient</h3>
+      <p>Alicia Berenson’s life is seemingly perfect. A famous painter married to an in-demand fashion photographer, she lives in a grand house with big windows overlooking a park in one of London’s most desirable areas. One evening her husband Gabriel returns home late from a fashion shoot, and Alicia shoots him five times in the face, and then never speaks another word.</p>
+    </div>
+  </div>
+</div>
+
+<div id="Science" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/gp/product/076790818X/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=076790818X&SubscriptionId=1MGPYB6YW3HWK55XCGG2"> <img src="assets/images/s1.jpg" alt="Science" style="width:100%"></a>
+      <h3>A Short History of Nearly Everything</h3>
+      <p>In Bryson's biggest book, he confronts his greatest challenge: to understand—and, if possible, answer—the oldest, biggest questions we have posed about the universe and ourselves. Taking as territory everything from the Big Bang to the rise of civilization, Bryson seeks to understand how we got from there being nothing at all to there being us. To that end, he has attached himself to a host of the world’s most advanced (and often obsessed) archaeologists, anthropologists, and mathematicians, travelling to their offices, laboratories, and field camps. He has read (or tried to read) their books, pestered them with questions, apprenticed himself to their powerful minds. A Short History of Nearly Everything is the record of this quest, and it is a sometimes profound, sometimes funny, and always supremely clear and entertaining adventure in the realms of human knowledge, as only Bill Bryson can render it. Science has never been more involving or entertaining.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/gp/product/0385493622/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0385493622&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/s2.jpg" alt="Science" style="width:100%"></a>
+      <h3>Fermat's Enigma</h3>
+      <p>xn + yn = zn, where n represents 3, 4, 5, ...no solution. "I have discovered a truly marvelous demonstration of this proposition which this margin is too narrow to contain." With these words, the seventeenth-century French mathematician Pierre de Fermat threw down the gauntlet to future generations.  What came to be known as Fermat's Last Theorem looked simple; proving it, however, became the Holy Grail of mathematics, baffling its finest minds for more than 350 years.  In Fermat's Enigma--based on the author's award-winning documentary film, which aired on PBS's "Nova"--Simon Singh tells the astonishingly entertaining story of the pursuit of that grail, and the lives that were devoted to, sacrificed for, and saved by it.  Here is a mesmerizing tale of heartbreak and mastery that will forever change your feelings about mathematics. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/gp/product/0060845503/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0060845503&SubscriptionId=1MGPYB6YW3HWK55XCGG2"> <img src="assets/images/s3.jpg" alt="Science" style="width:100%"> </a>
+      <h3>The Third Chimpanzee: The Evolution and Future of the Human Animal</h3>
+      <p>At some point during the last 100,000 years, humans began exhibiting traits and behavior that distinguished us from other animals, eventually creating language, art, religion, bicycles, spacecraft, and nuclear weapons—all within a heartbeat of evolutionary time. Now, faced with the threat of nuclear weapons and the effects of climate change, it seems our innate tendencies for violence and invention have led us to a crucial fork in our road. Where did these traits come from? Are they part of our species immutable destiny? Or is there hope for our species’ future if we change?</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/Origin-Species-150th-Anniversary/dp/0451529065/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=The+Origin+of+Species&qid=1645407279&s=books&sr=1-1"> <img src="assets/images/s4.jpg" alt="Science" style="width:100%"></a>
+      <h3>The Origin of Species</h3>
+      <p>Darwin's theory of natural selection issued a profound challenge to orthodox thought and belief: no being or species has been specifically created; all are locked into a pitiless struggle for existence, with extinction looming for those not fitted for the task. Yet The Origin of Species (1859) is also a humane and inspirational vision of ecological interrelatedness, revealing the complex mutual interdependencies between animal and plant life, climate and physical environment, and—by implication—within the human world. Written for the general reader, in a style which combines the rigour of science with the subtlety of literature, The Origin of Species remains one of the founding documents of the modern age.</p>
+    </div>
+  </div> 
+</div>
+
+<div id="Fiction" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/School-Good-Mothers-Novel/dp/1982156120/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=The+School+for+Good+Mothers&qid=1645407831&s=books&sr=1-1"><img src="assets/images/f1.jpg" alt="Fiction" style="width:100%"></a>
+      <h3>The School for Good Mothers</h3>
+      <p>In this taut and explosive debut novel, one lapse in judgement lands a young mother in a government reform program where custody of her child hangs in the balance. Frida Liu is struggling. She doesn’t have a career worthy of her Chinese immigrant parents’ sacrifices. What’s worse is she can’t persuade her husband, Gust, to give up his wellness-obsessed younger mistress. Only with their angelic daughter Harriet does Frida finally feel she’s attained the perfection expected of her. Harriet may be all she has, but she’s just enough.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/gp/product/0593296044/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0593296044&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/f2.jpg" alt="Fiction" style="width:100%"></a>
+      <h3>Fiona and Jane</h3>
+      <p>A witty, warm, and irreverent book that traces the lives of two young Taiwanese American women as they navigate friendship, sexuality, identity, and heartbreak over two decades. Spanning countries and selves, Fiona and Jane is an intimate portrait of a friendship, a deep dive into the universal perplexities of being young and alive, and a bracingly honest account of two Asian women who dare to stake a claim on joy in a changing, contemporary America.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/gp/product/1335425764/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1335425764&SubscriptionId=1MGPYB6YW3HWK55XCGG2"> <img src="assets/images/f3.jpg" alt="Fiction" style="width:100%"></a>
+      <h3>The Old Woman with the Knife</h3>
+      <p>The kinetic story of a sixty-five-year-old female assassin who faces an unexpected threat in the twilight of her career--this is an international bestseller and the English language debut from an award-winning South Korean author. At sixty-five, Hornclaw is beginning to slow down. She lives modestly in a small apartment, with only her aging dog, a rescue named Deadweight, to keep her company. There are expectations for people her age--that she'll retire and live out the rest of her days quietly. But Hornclaw is not like other people. She is an assassin.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/Looking-Alaska-John-Green/dp/0142402516/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Looking+for+Alaska&qid=1645406908&s=books&sr=1-1"> <img src="assets/images/f4.jpg" alt="Fiction" style="width:100%"> </a>
+      <h3>Looking for Alaska</h3>
+      <p>Before. Miles “Pudge” Halter is done with his safe life at home. His whole life has been one big non-event, and his obsession with famous last words has only made him crave “the Great Perhaps” even more (Francois Rabelais, poet). He heads off to the sometimes crazy and anything-but-boring world of Culver Creek Boarding School, and his life becomes the opposite of safe. Because down the hall is Alaska Young. The gorgeous, clever, funny, sexy, self-destructive, screwed up, and utterly fascinating Alaska Young. She is an event unto herself. She pulls Pudge into her world, launches him into the Great Perhaps, and steals his heart. Then. . . . After. Nothing is ever the same.</p>
+    </div>
+  </div>
+</div>
+    <div id="Health" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/0063040026/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0063040026&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/h1.jpg" alt="Health" style="width:100%"></a>
+      <h3>The Sleep Fix: Practical, Proven, and Surprising Solutions for Insomnia, Snoring, Shift Work, and More</h3>
+      <p>Roughly thirty percent of the population is estimated to be living with insomnia, while many more suffer from other sleep disorders. ABC anchor/correspondent Diane Macedo—a former insomniac herself—understands the struggle. Now, in The Sleep Fix, Macedo presents perspective-shifting research and easy-to-implement solutions to help millions of people finally get the shut-eye they need.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/059318842X/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=059318842X&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/h2.jpg" alt="Game of thrones" style="width:100%"></a>
+      <h3>Let's Get Physical: How Women Discovered Exercise and Reshaped the World</h3>
+      <p>A captivating blend of reportage and personal narrative that explores the untold history of women's exercise culture--from jogging and Jazzercise to Jane Fonda--and how women have parlayed physical strength into other forms of power.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/gp/product/0358003326/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0358003326&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/h3.jpg" alt="Health" style="width:100%"></a>
+      <h3>Tiny Habits: The Small Changes That Change Everything</h3>
+      <p>When it comes to change, tiny is mighty. Start with two pushups a day, not a two-hour workout; or five deep breaths each morning rather than an hour of meditation. In Tiny Habits, B.J. Fogg brings his experience coaching more than 40,000 people to help you lose weight, de-stress, sleep better, or achieve any goal of your choice.  You just need Fogg’s behavior formula: make it easy, make it fit your life, and make it rewarding. Whenever you get in your car, take one yoga breath. Smile.  Whenever you get in bed, turn off your phone. Give yourself a high five.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/s?k=This+is+Vegan+Propaganda&i=stripbooks&adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&tag=x_gr_w_bb_sout-20&ref=x_gr_w_bb_sout"><img src="assets/images/h4.jpg" alt="Health" style="width:100%"></a>
+      <h3>This is Vegan Propaganda (& Other Lies the Meat Industry tells you)</h3>
+      <p>Every time we eat, we have the power to radically transform the world we live in. Our choices can help alleviate the most pressing issues we face today: the climate crisis, infectious and chronic diseases, human exploitation and, of course, non-human exploitation. Undeniably, these issues can be uncomfortable to learn about but the benefits of doing so cannot be overstated. It is quite literally a matter of life and death.</p>
+    </div>
+  </div>
+</div>
+
+<div id="Psychology" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1328662055/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1328662055&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/p1.jpg" alt="Psychology" style="width:100%"></a>
+      <h3>Maybe You Should Talk to Someone: A Therapist, Her Therapist, and Our Lives Revealed</h3>
+      <p>Maybe You Should Talk to Someone is revolutionary in its candor, offering a deeply personal yet universal tour of our hearts and minds and providing the rarest of gifts: a boldly revealing portrait of what it means to be human, and a disarmingly funny and illuminating account of our own mysterious lives and our power to transform them.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/Mindset-Psychology-Carol-S-Dweck/dp/0345472322/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Mindset&qid=1645410642&s=books&sr=1-1"><img src="assets/images/p2.jpg" alt="Psychology" style="width:100%"></a>
+      <h3>Mindset: The New Psychology of Success</h3>
+      <p>In this edition, Dweck offers new insights into her now famous and broadly embraced concept. She introduces a phenomenon she calls false growth mindset and guides people toward adopting a deeper, truer growth mindset. She also expands the mindset concept beyond the individual, applying it to the cultures of groups and organizations. With the right mindset, you can motivate those you lead, teach, and love — to transform their lives and your own.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/B0006IU7JK/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=How+to+Win+Friends+and+Influence+People&qid=1645410739&s=books&sr=1-1"><img src="assets/images/p3.jpg" alt="Psychology" style="width:100%"></a>
+      <h3>How to Win Friends and Influence People</h3>
+      <p>Since its release in 1936, How to Win Friends and Influence People has sold more than 15 million copies. Dale Carnegie's first book is a timeless bestseller, packed with rock-solid advice that has carried thousands of now famous people up the ladder of success in their business and personal lives.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1400069289/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1400069289&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/p4.jpg" alt="Psychology" style="width:100%"></a>
+      <h3>The Power of Habit: Why We Do What We Do in Life and Business</h3>
+      <p>Marketers at Procter & Gamble study videos of people making their beds. They are desperately trying to figure out how to sell a new product called Febreze, on track to be one of the biggest flops in company history. Suddenly, one of them detects a nearly imperceptible pattern—and with a slight shift in advertising, Febreze goes on to earn a billion dollars a year.</p>
+    </div>
+  </div>
+</div>
+
+<div id="Business" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1451648537/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1451648537&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/jobs.jpg" alt="Business" style="width:100%"></a>
+      <h3>Steve Jobs</h3>
+      <p>Walter Isaacson's "enthralling" (The New Yorker) worldwide bestselling biography of Apple cofounder Steve Jobs. Based on more than forty interviews with Steve Jobs conducted over two years--as well as interviews with more than 100 family members, friends, adversaries, competitors, and colleagues--Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. Isaacson's portrait touched millions of readers. At a time when America is seeking ways to sustain its innovative edge, Jobs stands as the ultimate icon of inventiveness and applied imagination. He knew that the best way to create value in the twenty-first century was to connect creativity with technology</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/B08VJKX427/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B08VJKX427&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/b1.jpg" alt="Business" style="width:100%"></a>
+      <h3>Making Numbers Count: The Art and Science of Communicating Numbers</h3>
+      <p>Across industries from business and technology to medicine and sociology, numbers and data are fundamental to the next big idea. In Making Numbers Count, Chip Heath argues that it's crucial for us all to be able to interpret and communicate numbers and stats more effectively so that data comes alive. By combining years of research into making ideas stick with a deep understanding of how the brain really works, Heath has discerned six critical principles that will give anyone the tools to communicate numbers with more transparency and meaning.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/The-5-AM-Club-Robin-Sharma-audiobook/dp/B07KRM53PR/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=The+5+AM+Club&qid=1645411721&s=books&sr=1-1"><img src="assets/images/b2.jpg" alt="Business" style="width:100%"></a>
+      <h3>The 5 AM Club: Own Your Morning. Elevate Your Life</h3>
+      <p>Legendary leadership and elite performance expert Robin Sharma introduced The 5am Club concept over twenty years ago, based on a revolutionary morning routine that has helped his clients maximize their productivity, activate their best health and bulletproof their serenity in this age of overwhelming complexity.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/Money-Game-Manifestation-Step-Step/dp/B09CRTMJQT/ref=sr_1_9?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Money+Game&qid=1645411787&s=books&sr=1-9"><img src="assets/images/b3.jpg" alt="Business" style="width:100%"></a>
+      <h3>Money Game: A Wealth Manifestation Guide. Level Up Your Mindset Step-By-Step & Create An Abundant Life</h3>
+      <p>Don't let your limiting beliefs and stories around wealth & abundance hold you back any more! Start manifesting money or any form of abundance today, regardless of your current status or intended goal. The Money Game eBook uses the proven strategy of Micro-Shifting to create alignment between the power of your subconscious and your dream life.</p>
+    </div>
+  </div>
+</div>
+    <div id="Non-fiction" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1451648537/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1451648537&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/jobs.jpg" alt="Business" style="width:100%"></a>
+      <h3>Steve Jobs</h3>
+      <p>Walter Isaacson's "enthralling" (The New Yorker) worldwide bestselling biography of Apple cofounder Steve Jobs. Based on more than forty interviews with Steve Jobs conducted over two years--as well as interviews with more than 100 family members, friends, adversaries, competitors, and colleagues--Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. Isaacson's portrait touched millions of readers. At a time when America is seeking ways to sustain its innovative edge, Jobs stands as the ultimate icon of inventiveness and applied imagination. He knew that the best way to create value in the twenty-first century was to connect creativity with technology</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/B08VJKX427/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B08VJKX427&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/b1.jpg" alt="Business" style="width:100%"></a>
+      <h3>Making Numbers Count: The Art and Science of Communicating Numbers</h3>
+      <p>Across industries from business and technology to medicine and sociology, numbers and data are fundamental to the next big idea. In Making Numbers Count, Chip Heath argues that it's crucial for us all to be able to interpret and communicate numbers and stats more effectively so that data comes alive. By combining years of research into making ideas stick with a deep understanding of how the brain really works, Heath has discerned six critical principles that will give anyone the tools to communicate numbers with more transparency and meaning.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/The-5-AM-Club-Robin-Sharma-audiobook/dp/B07KRM53PR/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=The+5+AM+Club&qid=1645411721&s=books&sr=1-1"><img src="assets/images/b2.jpg" alt="Business" style="width:100%"></a>
+      <h3>The 5 AM Club: Own Your Morning. Elevate Your Life</h3>
+      <p>Legendary leadership and elite performance expert Robin Sharma introduced The 5am Club concept over twenty years ago, based on a revolutionary morning routine that has helped his clients maximize their productivity, activate their best health and bulletproof their serenity in this age of overwhelming complexity.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/Money-Game-Manifestation-Step-Step/dp/B09CRTMJQT/ref=sr_1_9?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Money+Game&qid=1645411787&s=books&sr=1-9"><img src="assets/images/b3.jpg" alt="Business" style="width:100%"></a>
+      <h3>Money Game: A Wealth Manifestation Guide. Level Up Your Mindset Step-By-Step & Create An Abundant Life</h3>
+      <p>Don't let your limiting beliefs and stories around wealth & abundance hold you back any more! Start manifesting money or any form of abundance today, regardless of your current status or intended goal. The Money Game eBook uses the proven strategy of Micro-Shifting to create alignment between the power of your subconscious and your dream life.</p>
+    </div>
+  </div>
+</div>
+    
+<script>
+function openGenre(evt, gName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(gName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 

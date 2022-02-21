@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<hr>
+
+<h2>Business</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/1451648537/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1451648537&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/jobs.jpg" alt="Business" style="width:100%"></a>
+      <h3>Steve Jobs</h3>
+      <p>Walter Isaacson's "enthralling" (The New Yorker) worldwide bestselling biography of Apple cofounder Steve Jobs. Based on more than forty interviews with Steve Jobs conducted over two years--as well as interviews with more than 100 family members, friends, adversaries, competitors, and colleagues--Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. Isaacson's portrait touched millions of readers. At a time when America is seeking ways to sustain its innovative edge, Jobs stands as the ultimate icon of inventiveness and applied imagination. He knew that the best way to create value in the twenty-first century was to connect creativity with technology</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/B08VJKX427/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B08VJKX427&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/b1.jpg" alt="Business" style="width:100%"></a>
+      <h3>Making Numbers Count: The Art and Science of Communicating Numbers</h3>
+      <p>Across industries from business and technology to medicine and sociology, numbers and data are fundamental to the next big idea. In Making Numbers Count, Chip Heath argues that it's crucial for us all to be able to interpret and communicate numbers and stats more effectively so that data comes alive. By combining years of research into making ideas stick with a deep understanding of how the brain really works, Heath has discerned six critical principles that will give anyone the tools to communicate numbers with more transparency and meaning.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/The-5-AM-Club-Robin-Sharma-audiobook/dp/B07KRM53PR/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=The+5+AM+Club&qid=1645411721&s=books&sr=1-1"><img src="assets/images/b2.jpg" alt="Business" style="width:100%"></a>
+      <h3>The 5 AM Club: Own Your Morning. Elevate Your Life</h3>
+      <p>Legendary leadership and elite performance expert Robin Sharma introduced The 5am Club concept over twenty years ago, based on a revolutionary morning routine that has helped his clients maximize their productivity, activate their best health and bulletproof their serenity in this age of overwhelming complexity.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/Money-Game-Manifestation-Step-Step/dp/B09CRTMJQT/ref=sr_1_9?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Money+Game&qid=1645411787&s=books&sr=1-9"><img src="assets/images/b3.jpg" alt="Business" style="width:100%"></a>
+      <h3>Money Game: A Wealth Manifestation Guide. Level Up Your Mindset Step-By-Step & Create An Abundant Life</h3>
+      <p>Don't let your limiting beliefs and stories around wealth & abundance hold you back any more! Start manifesting money or any form of abundance today, regardless of your current status or intended goal. The Money Game eBook uses the proven strategy of Micro-Shifting to create alignment between the power of your subconscious and your dream life.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+    </div>
+
+</body>
+</html>

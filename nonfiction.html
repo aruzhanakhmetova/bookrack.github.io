@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<hr>
+
+<h2>Non-fiction</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/0062993151/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0062993151&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/n1.jpg" alt="Nonfiction" style="width:100%"></a>
+      <h3>Cultish: The Language of Fanaticism</h3>
+      <p>The author of the widely praised Wordslut analyzes the social science of cult influence: how cultish groups from Jonestown and Scientology to SoulCycle and social media gurus use language as the ultimate form of power.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/gp/product/0062977407/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0062977407&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/n2.jpg" alt="Nonfiction" style="width:100%"></a>
+      <h3>South to America: A Journey Below the Mason Dixon to Understand the Soul of a Nation</h3>
+      <p>This is the story of a Black woman and native Alabaman returning to the region she has always called home and considering it with fresh eyes. Her journey is full of detours, deep dives, and surprising encounters with places and people. She renders Southerners from all walks of life with sensitivity and honesty, sharing her thoughts about a troubling history and the ritual humiliations and joys that characterize so much of Southern life.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://www.amazon.com/Maid-Hard-Work-Mothers-Survive-ebook/dp/B07CWPRXFG/ref=sr_1_2?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Maid&qid=1645411217&s=books&sr=1-2"><img src="assets/images/n3.jpg" alt="Nonfiction" style="width:100%"></a>
+      <h3>Maid: Hard Work, Low Pay, and a Mother's Will to Survive</h3>
+      <p>Maid explores the underbelly of upper-middle class America and the reality of what it’s like to be in service to them. “I’d become a nameless ghost,” Stephanie writes about her relationship with her clients, many of whom do not know her from any other cleaner, but who she learns plenty about. As she begins to discover more about her clients’ lives-their sadness and love, too-she begins to find hope in her own path.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/Educated-Memoir-Tara-Westover/dp/0399590528/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Educated&qid=1645411308&s=books&sr=1-1"><img src="assets/images/n4.jpg" alt="Nonfiction" style="width:100%"></a>
+      <h3>Educated</h3>
+      <p>Educated is an account of the struggle for self-invention. It is a tale of fierce family loyalty and of the grief that comes with severing the closest of ties. With the acute insight that distinguishes all great writers, Westover has crafted a universal coming-of-age story that gets to the heart of what an education is and what it offers: the perspective to see one's life through new eyes and the will to change it.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+    </div>
+
+</body>
+</html>

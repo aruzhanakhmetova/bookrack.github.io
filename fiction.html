@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<hr>
+
+<h2>Fiction</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/School-Good-Mothers-Novel/dp/1982156120/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=The+School+for+Good+Mothers&qid=1645407831&s=books&sr=1-1"><img src="assets/images/f1.jpg" alt="Fiction" style="width:100%"></a>
+      <h3>The School for Good Mothers</h3>
+      <p>In this taut and explosive debut novel, one lapse in judgement lands a young mother in a government reform program where custody of her child hangs in the balance. Frida Liu is struggling. She doesn’t have a career worthy of her Chinese immigrant parents’ sacrifices. What’s worse is she can’t persuade her husband, Gust, to give up his wellness-obsessed younger mistress. Only with their angelic daughter Harriet does Frida finally feel she’s attained the perfection expected of her. Harriet may be all she has, but she’s just enough.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/gp/product/0593296044/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0593296044&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="assets/images/f2.jpg" alt="Fiction" style="width:100%"></a>
+      <h3>Fiona and Jane</h3>
+      <p>A witty, warm, and irreverent book that traces the lives of two young Taiwanese American women as they navigate friendship, sexuality, identity, and heartbreak over two decades. Spanning countries and selves, Fiona and Jane is an intimate portrait of a friendship, a deep dive into the universal perplexities of being young and alive, and a bracingly honest account of two Asian women who dare to stake a claim on joy in a changing, contemporary America.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <a href="https://www.amazon.com/gp/product/1335425764/ref=x_gr_w_bb_sout?ie=UTF8&tag=x_gr_w_bb_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1335425764&SubscriptionId=1MGPYB6YW3HWK55XCGG2"> <img src="assets/images/f3.jpg" alt="Fiction" style="width:100%"></a>
+      <h3>The Old Woman with the Knife</h3>
+      <p>The kinetic story of a sixty-five-year-old female assassin who faces an unexpected threat in the twilight of her career--this is an international bestseller and the English language debut from an award-winning South Korean author. At sixty-five, Hornclaw is beginning to slow down. She lives modestly in a small apartment, with only her aging dog, a rescue named Deadweight, to keep her company. There are expectations for people her age--that she'll retire and live out the rest of her days quietly. But Hornclaw is not like other people. She is an assassin.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.amazon.com/Looking-Alaska-John-Green/dp/0142402516/ref=sr_1_1?adid=082VK13VJJCZTQYGWWCZ&campaign=211041&creative=374001&keywords=Looking+for+Alaska&qid=1645406908&s=books&sr=1-1"> <img src="assets/images/f4.jpg" alt="Fiction" style="width:100%"> </a>
+      <h3>Looking for Alaska</h3>
+      <p>Before. Miles “Pudge” Halter is done with his safe life at home. His whole life has been one big non-event, and his obsession with famous last words has only made him crave “the Great Perhaps” even more (Francois Rabelais, poet). He heads off to the sometimes crazy and anything-but-boring world of Culver Creek Boarding School, and his life becomes the opposite of safe. Because down the hall is Alaska Young. The gorgeous, clever, funny, sexy, self-destructive, screwed up, and utterly fascinating Alaska Young. She is an event unto herself. She pulls Pudge into her world, launches him into the Great Perhaps, and steals his heart. Then. . . . After. Nothing is ever the same.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+    </div>
+
+</body>
+</html>
